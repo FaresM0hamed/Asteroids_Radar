@@ -50,6 +50,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
+
+
     private fun getPictureOfDay() {
         viewModelScope.launch {
             try {
