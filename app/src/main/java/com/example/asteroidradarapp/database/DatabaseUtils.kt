@@ -1,10 +1,8 @@
 package com.example.asteroidradarapp.database
 
-import com.example.asteroidradarapp.Asteroid
-
-fun List<AsteroidModel>.asAsteroids() : List<Asteroid> {
+fun List<AsteroidModel>.asAsteroids() : List<AsteroidModel> {
     return map {
-        Asteroid(
+        AsteroidModel(
             id = it.id,
             codename = it.codename,
             closeApproachDate = it.closeApproachDate,

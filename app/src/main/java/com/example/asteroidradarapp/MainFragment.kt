@@ -27,6 +27,7 @@ class MainFragment : Fragment() {
             viewModel.onAsteroidItemClick(asteroidId)
         })
         binding.asteroidRecycler.adapter = adapter
+
         viewModel.asteroids.observe(viewLifecycleOwner) { asteroids ->
             adapter.submitList(asteroids)
         }
@@ -50,6 +51,11 @@ class MainFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.week_asteroid -> viewModel.filterWeekAsteroids()
+            R.id.today_asteroid -> viewModel.filterTodayAsteroids()
+            R.id.save_asteroid -> viewModel.filterSavedAsteroids()
+        }
         return true
     }
 

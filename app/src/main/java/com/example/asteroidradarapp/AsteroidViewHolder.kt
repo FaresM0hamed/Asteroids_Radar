@@ -3,12 +3,13 @@ package com.example.asteroidradarapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.asteroidradarapp.database.AsteroidModel
 import com.example.asteroidradarapp.databinding.ListItemAsteroidBinding
 
 class AsteroidViewHolder private constructor(private val binding: ListItemAsteroidBinding)
     : RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(item: Asteroid, clickListener: AsteroidItemClickListener) {
+    fun bind(item: AsteroidModel, clickListener: AsteroidItemClickListener) {
         binding.asteroid = item
         binding.clickListener = clickListener
         binding.executePendingBindings()

@@ -7,7 +7,7 @@
 
         <variable
             name="asteroid"
-            type="com.example.asteroidradarapp.Asteroid" />
+            type="com.example.asteroidradarapp.database.AsteroidModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,13 +1,14 @@
 package com.example.asteroidradarapp
 
 import androidx.recyclerview.widget.DiffUtil
+import com.example.asteroidradarapp.database.AsteroidModel
 
-class AsteroidDiffCallback: DiffUtil.ItemCallback<Asteroid>() {
-    override fun areItemsTheSame(oldItem: Asteroid, newItem: Asteroid): Boolean {
+class AsteroidDiffCallback: DiffUtil.ItemCallback<AsteroidModel>() {
+    override fun areItemsTheSame(oldItem: AsteroidModel, newItem: AsteroidModel): Boolean {
         return oldItem.id == newItem.id
     }
 
-    override fun areContentsTheSame(oldItem: Asteroid, newItem: Asteroid): Boolean {
+    override fun areContentsTheSame(oldItem: AsteroidModel, newItem: AsteroidModel): Boolean {
         return oldItem == newItem
     }
 }

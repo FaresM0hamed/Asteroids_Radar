@@ -1,5 +1,7 @@
 package com.example.asteroidradarapp
 
-class AsteroidItemClickListener(val clickListener: (Asteroid) -> Unit) {
-    fun onClick(data: Asteroid) = clickListener(data)
+import com.example.asteroidradarapp.database.AsteroidModel
+
+class AsteroidItemClickListener(val clickListener: (AsteroidModel) -> Unit) {
+    fun onClick(data: AsteroidModel) = clickListener(data)
 }

@@ -20,6 +20,6 @@
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument android:name="selectedAsteroid"
-            app:argType="com.example.asteroidradarapp.Asteroid" />
+            app:argType="com.example.asteroidradarapp.database.AsteroidModel" />
     </fragment>
 </navigation>

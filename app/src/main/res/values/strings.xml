@@ -19,6 +19,6 @@
     <string name="today_asteroids">View today asteroids</string>
     <string name="saved_asteroids">View saved asteroids</string>
     <string name="this_is_nasa_picture_of_day">This is nasa picture of day</string>
-    <string name="astronomical_unit_explanation_button">Astronomical unit definition button</string>
+    <string name="astronomical_unit_explanation_button">Astronomical unit definition </string>
 
 </resources>

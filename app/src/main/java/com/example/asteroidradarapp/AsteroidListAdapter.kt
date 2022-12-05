@@ -2,9 +2,10 @@ package com.example.asteroidradarapp
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
+import com.example.asteroidradarapp.database.AsteroidModel
 
 class AsteroidListAdapter(private val itemClickListener: AsteroidItemClickListener)
-    : ListAdapter<Asteroid, AsteroidViewHolder>(AsteroidDiffCallback()) {
+    : ListAdapter<AsteroidModel, AsteroidViewHolder>(AsteroidDiffCallback()) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AsteroidViewHolder {
